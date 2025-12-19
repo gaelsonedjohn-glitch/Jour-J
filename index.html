@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Jour J</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Montserrat:wght@300;400;500&family=Dancing+Script:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="theme-romantique">
+    <!-- Overlay pour menu mobile -->
+    <div class="menu-overlay"></div>
+
+    <!-- Sélecteur de thème -->
+    <div class="theme-selector">
+        <button class="theme-btn theme-romantique active" data-theme="romantique" title="Romantique">
+            <i class="fas fa-heart"></i>
+        </button>
+        <button class="theme-btn theme-epure" data-theme="epure" title="Épuré">
+            <i class="fas fa-feather-alt"></i>
+        </button>
+        <button class="theme-btn theme-moderne" data-theme="moderne" title="Moderne">
+            <i class="fas fa-gem"></i>
+        </button>
+        <button class="theme-btn theme-nature" data-theme="nature" title="Nature">
+            <i class="fas fa-leaf"></i>
+        </button>
+    </div>
+
+    <!-- Navigation principale -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <!-- Menu mobile hamburger à gauche -->
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                
+                <!-- Logo centré sur mobile, à gauche sur desktop -->
+                <a href="#" class="logo">Le Jour</a>
+                
+                <!-- Menu desktop -->
+                <ul class="nav-menu">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#histoire">Notre histoire</a></li>
+                    <li><a href="#programme">Programme</a></li>
+                    <li><a href="#lieux">Lieux & Accès</a></li>
+                    <li><a href="#rsvp">RSVP</a></li>
+                    <li><a href="#galerie">Galerie</a></li>
+                    <li><a href="#liste">Liste de mariage</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Navigation inférieure pour mobile -->
+    <nav class="bottom-nav">
+        <a href="#accueil" class="nav-item active">
+            <i class="fas fa-home"></i>
+            <span>Accueil</span>
+        </a>
+        <a href="#programme" class="nav-item">
+            <i class="fas fa-calendar-alt"></i>
+            <span>Programme</span>
+        </a>
+        <a href="#rsvp" class="nav-item">
+            <i class="fas fa-envelope"></i>
+            <span>RSVP</span>
+        </a>
+        <a href="#galerie" class="nav-item">
+            <i class="fas fa-images"></i>
+            <span>Galerie</span>
+        </a>
+    </nav>
+
+    <main>
+        <!-- Section Accueil avec compte à rebours -->
+        <section id="accueil" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Sophie & Antoine</h1>
+                <p class="hero-subtitle">Nous nous marions le 24 Mai 2026</p>
+                <div class="countdown-container">
+                    <p class="countdown-label">Compte à rebours</p>
+                    <div class="countdown">
+                        <div class="countdown-item">
+                            <div class="flip-card" data-type="days">
+                                <div class="flip-top">00</div>
+                                <div class="flip-bottom">00</div>
+                                <div class="flip-top-next">00</div>
+                            </div>
+                            <span class="countdown-label">Jours</span>
+                        </div>
+                        <div class="countdown-separator">:</div>
+                        <div class="countdown-item">
+                            <div class="flip-card" data-type="hours">
+                                <div class="flip-top">00</div>
+                                <div class="flip-bottom">00</div>
+                                <div class="flip-top-next">00</div>
+                            </div>
+                            <span class="countdown-label">Heures</span>
+                        </div>
+                        <div class="countdown-separator">:</div>
+                        <div class="countdown-item">
+                            <div class="flip-card" data-type="minutes">
+                                <div class="flip-top">00</div>
+                                <div class="flip-bottom">00</div>
+                                <div class="flip-top-next">00</div>
+                            </div>
+                            <span class="countdown-label">Minutes</span>
+                        </div>
+                        <div class="countdown-separator">:</div>
+                        <div class="countdown-item">
+                            <div class="flip-card" data-type="seconds">
+                                <div class="flip-top">00</div>
+                                <div class="flip-bottom">00</div>
+                                <div class="flip-top-next">00</div>
+                            </div>
+                            <span class="countdown-label">Secondes</span>
+                        </div>
+                    </div>
+                    <div class="countdown-message">
+                        <p>Le compte à rebours est basé sur l'heure de la cérémonie (14h30)</p>
+                    </div>
+                </div>
+                <div class="hero-message">
+                    <p>« C'est avec une immense joie que nous vous convions à célébrer notre union. Ce jour sera d'autant plus beau que vous y serez. »</p>
+                </div>
+                <a href="#rsvp" class="btn-primary">Confirmer ma présence</a>
+            </div>
+            <div class="hero-image"></div>
+        </section>
+
+        <!-- Section Notre histoire -->
+        <section id="histoire" class="section">
+            <div class="container">
+                <h2 class="section-title">Notre histoire</h2>
+                <div class="story-container">
+                    <div class="story-item">
+                        <div class="story-image first-meet"></div>
+                        <div class="story-content">
+                            <h3>Première rencontre</h3>
+                            <p class="story-date">14 février 2020</p>
+                            <p>C'était un soir d'hiver à Paris. Nous nous sommes croisés par hasard dans une librairie du Quartier Latin. Antoine cherchait un livre de poésie, Sophie feuilletait un recueil de photographies. Notre conversation a duré trois heures, comme si nous nous connaissions depuis toujours.</p>
+                        </div>
+                    </div>
+                    <div class="story-item reverse">
+                        <div class="story-image proposal"></div>
+                        <div class="story-content">
+                            <h3>La demande</h3>
+                            <p class="story-date">20 août 2024</p>
+                            <p>Sur la plage de Collioure, au coucher du soleil, Antoine s'est mis à genoux. Les vagues chantaient, le ciel s'embrasait d'orange et de rose. Dans ma main tremblante, la bague brillait de mille feux. Ma réponse fut un "oui" prononcé entre rires et larmes de joie.</p>
+                        </div>
+                    </div>
+                    <div class="story-item">
+                        <div class="story-image wedding-plan"></div>
+                        <div class="story-content">
+                            <h3>Préparatifs du mariage</h3>
+                            <p class="story-date">Janvier 2025 - aujourd'hui</p>
+                            <p>Des mois de préparation remplis de rires, de décisions et d'excitation. Chaque détail a été choisi avec amour, des fleurs à la musique, en passant par le menu. Nous avons hâte de partager ce moment unique avec ceux que nous aimons.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Programme -->
+        <section id="programme" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Programme de la journée</h2>
+                <div class="program-date">Dimanche 24 Mai 2026</div>
+                <div class="program-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-time">14h30</div>
+                        <div class="timeline-content">
+                            <h3>Cérémonie civile</h3>
+                            <p class="timeline-location">Mairie du 4ème arrondissement, Paris</p>
+                            <p>Rassemblement à la mairie pour la cérémonie officielle.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-time">16h00</div>
+                        <div class="timeline-content">
+                            <h3>Cérémonie religieuse</h3>
+                            <p class="timeline-location">Église Saint-Germain-des-Prés, Paris</p>
+                            <p>Bénédiction nuptiale et échange des consentements.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-time">17h30</div>
+                        <div class="timeline-content">
+                            <h3>Cocktail de bienvenue</h3>
+                            <p class="timeline-location">Jardin des Tuileries, Paris</p>
+                            <p>Apéritif et animations musicales en attendant le dîner.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-time">20h00</div>
+                        <div class="timeline-content">
+                            <h3>Dîner de réception</h3>
+                            <p class="timeline-location">Château de Versailles, Salon d'Hercule</p>
+                            <p>Repas gastronomique préparé par le chef étoilé Pierre Gagnaire.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-time">23h00</div>
+                        <div class="timeline-content">
+                            <h3>Soirée dansante</h3>
+                            <p class="timeline-location">Château de Versailles, Galerie des Glaces</p>
+                            <p>Ouverture du bal par le traditionnel slow, puis musique jusqu'au petit matin.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Lieux et accès -->
+        <section id="lieux" class="section">
+            <div class="container">
+                <h2 class="section-title">Lieux et accès</h2>
+                <p class="section-subtitle">Dimanche 24 Mai 2026</p>
+                <div class="locations-container">
+                    <div class="location-card">
+                        <div class="location-icon">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+                        <h3>Cérémonie civile</h3>
+                        <p class="location-name">Mairie du 4ème arrondissement</p>
+                        <p class="location-address">2 Place Baudoyer, 75004 Paris</p>
+                        <div class="location-time">
+                            <i class="fas fa-clock"></i> 14h30
+                        </div>
+                        <div class="location-info">
+                            <p><i class="fas fa-subway"></i> Métro: Hôtel de Ville (ligne 1, 11)</p>
+                            <p><i class="fas fa-bus"></i> Bus: 67, 69, 76, 96</p>
+                            <p><i class="fas fa-parking"></i> Parking: Hôtel de Ville (payant)</p>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <div class="location-icon">
+                            <i class="fas fa-church"></i>
+                        </div>
+                        <h3>Cérémonie religieuse</h3>
+                        <p class="location-name">Église Saint-Germain-des-Prés</p>
+                        <p class="location-address">3 Place Saint-Germain des Prés, 75006 Paris</p>
+                        <div class="location-time">
+                            <i class="fas fa-clock"></i> 16h00
+                        </div>
+                        <div class="location-info">
+                            <p><i class="fas fa-subway"></i> Métro: Saint-Germain-des-Prés (ligne 4)</p>
+                            <p><i class="fas fa-bus"></i> Bus: 39, 63, 70, 86, 95</p>
+                            <p><i class="fas fa-parking"></i> Parking: Rue de Rennes (payant)</p>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <div class="location-icon">
+                            <i class="fas fa-chess-queen"></i>
+                        </div>
+                        <h3>Réception</h3>
+                        <p class="location-name">Château de Versailles</p>
+                        <p class="location-address">Place d'Armes, 78000 Versailles</p>
+                        <div class="location-time">
+                            <i class="fas fa-clock"></i> 17h30
+                        </div>
+                        <div class="location-info">
+                            <p><i class="fas fa-train"></i> RER: Versailles Rive Gauche (ligne C)</p>
+                            <p><i class="fas fa-bus"></i> Bus: 171 depuis Pont de Sèvres</p>
+                            <p><i class="fas fa-car"></i> Parking: Grand Trianon (gratuit pour les invités)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Carte interactive des lieux</p>
+                        <small>(Fonctionnalité à intégrer avec Google Maps API)</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section RSVP -->
+        <section id="rsvp" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Confirmez votre présence</h2>
+                <div class="rsvp-date-info">
+                    <p><i class="fas fa-calendar-check"></i> Merci de confirmer votre présence avant le <strong>24 Avril 2026</strong></p>
+                </div>
+                <div class="rsvp-container">
+                    <div class="rsvp-stats">
+                        <h3>Statistiques en temps réel</h3>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-number" id="total-invites">150</div>
+                                <div class="stat-label">Invités</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" id="confirmed-invites">112</div>
+                                <div class="stat-label">Confirmations</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" id="pending-invites">38</div>
+                                <div class="stat-label">En attente</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" id="declined-invites">0</div>
+                                <div class="stat-label">Indisponibles</div>
+                            </div>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%"></div>
+                        </div>
+                        <p class="progress-text">75% de réponses reçues</p>
+                        <div class="countdown-rsvp">
+                            <p><i class="fas fa-hourglass-half"></i> <span id="rsvp-days-left">30</span> jours avant la date limite</p>
+                        </div>
+                    </div>
+                    <div class="rsvp-form-container">
+                        <form id="rsvpForm" class="rsvp-form">
+                            <h3>Formulaire de réponse</h3>
+                            <div class="form-group">
+                                <label for="guest-name">Nom complet *</label>
+                                <input type="text" id="guest-name" name="guest-name" required placeholder="Votre nom et prénom">
+                            </div>
+                            <div class="form-group">
+                                <label for="guest-email">Adresse email *</label>
+                                <input type="email" id="guest-email" name="guest-email" required placeholder="votre.email@exemple.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="guest-count">Nombre de personnes *</label>
+                                <select id="guest-count" name="guest-count" required>
+                                    <option value="" disabled selected>Sélectionnez</option>
+                                    <option value="1">1 personne (moi uniquement)</option>
+                                    <option value="2">2 personnes</option>
+                                    <option value="3">3 personnes</option>
+                                    <option value="4">4 personnes</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Participation *</label>
+                                <div class="radio-group">
+                                    <label class="radio-option">
+                                        <input type="radio" name="attendance" value="yes" required>
+                                        <span class="radio-custom"></span>
+                                        <span>Oui, avec joie !</span>
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="attendance" value="no" required>
+                                        <span class="radio-custom"></span>
+                                        <span>Non, malheureusement</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="guest-message">Message pour les mariés (optionnel)</label>
+                                <textarea id="guest-message" name="guest-message" rows="3" placeholder="Vos mots doux, vos souhaits..."></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary">Envoyer ma réponse</button>
+                        </form>
+                        <div id="rsvpSuccess" class="success-message hidden">
+                            <i class="fas fa-check-circle"></i>
+                            <h3>Merci pour votre réponse !</h3>
+                            <p>Votre confirmation a bien été enregistrée. Nous avons hâte de vous voir le jour J !</p>
+                            <button id="newResponse" class="btn-secondary">Nouvelle réponse</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Galerie -->
+        <section id="galerie" class="section">
+            <div class="container">
+                <h2 class="section-title">Galerie photo</h2>
+                <div class="slideshow-container">
+                    <div class="slideshow">
+                        <div class="slide active">
+                            <div class="slide-image prewedding-1"></div>
+                            <div class="slide-caption">
+                                <p>« L'amour ne compte pas les années, il compte les moments. » - Notre séance pré-wedding à Giverny</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-image prewedding-2"></div>
+                            <div class="slide-caption">
+                                <p>« Deux cœurs, une seule âme. » - Sur les ponts de Paris au printemps</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-image prewedding-3"></div>
+                            <div class="slide-caption">
+                                <p>« Le véritable amour, c'est lorsque vos âmes se reconnaissent. » - Une journée en Provence</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-image prewedding-4"></div>
+                            <div class="slide-caption">
+                                <p>« Aimer, ce n'est pas se regarder l'un l'autre, c'est regarder ensemble dans la même direction. » - Saint-Malo, été 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slideshow-nav">
+                        <button class="slide-nav prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="slide-indicators">
+                            <span class="indicator active"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                        </div>
+                        <button class="slide-nav next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Liste de mariage -->
+        <section id="liste" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Liste de mariage</h2>
+                <p class="section-intro">Votre présence est le plus beau des cadeaux. Si vous souhaitez néanmoins nous offrir un présent, voici quelques idées qui nous feraient plaisir.</p>
+                <div class="gift-grid">
+                    <div class="gift-card">
+                        <div class="gift-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Service de table</h3>
+                        <p class="gift-description">Service en porcelaine de Limoges pour nos dîners de fête.</p>
+                        <div class="gift-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 65%"></div>
+                            </div>
+                            <div class="gift-stats">65% financé</div>
+                        </div>
+                        <button class="btn-gift">Contribuer</button>
+                    </div>
+                    <div class="gift-card">
+                        <div class="gift-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <h3>Voyage de noces</h3>
+                        <p class="gift-description">Contribution pour notre voyage en Italie (Sicile et Toscane).</p>
+                        <div class="gift-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 42%"></div>
+                            </div>
+                            <div class="gift-stats">42% financé</div>
+                        </div>
+                        <button class="btn-gift">Contribuer</button>
+                    </div>
+                    <div class="gift-card">
+                        <div class="gift-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Aménagement maison</h3>
+                        <p class="gift-description">Canapé pour notre nouveau salon que nous aménageons.</p>
+                        <div class="gift-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 30%"></div>
+                            </div>
+                            <div class="gift-stats">30% financé</div>
+                        </div>
+                        <button class="btn-gift">Contribuer</button>
+                    </div>
+                    <div class="gift-card">
+                        <div class="gift-icon">
+                            <i class="fas fa-wine-bottle"></i>
+                        </div>
+                        <h3>Cave à vin</h3>
+                        <p class="gift-description">Bouteilles de vin pour constituer notre future cave.</p>
+                        <div class="gift-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                            <div class="gift-stats">80% financé</div>
+                        </div>
+                        <button class="btn-gift">Contribuer</button>
+                    </div>
+                </div>
+                <div class="gift-note">
+                    <p><i class="fas fa-heart"></i> <strong>Note importante :</strong> Tous les cadeaux sont optionnels. Le plus important pour nous est de partager ce moment unique avec vous.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section FAQ -->
+        <section id="faq" class="section">
+            <div class="container">
+                <h2 class="section-title">Questions fréquentes</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Y a-t-il un code vestimentaire ?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Nous vous invitons à porter une tenue de cérémonie (costume pour les hommes, robe pour les femmes). La cérémonie du soir sera plus formelle, alors n'hésitez pas à sortir vos plus beaux atours !</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Puis-je amener un enfant ?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Bien sûr ! Les enfants sont les bienvenus. Un espace jeu sera aménagé pour eux pendant le dîner, avec une baby-sitter diplômée pour les surveiller.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Y aura-t-il des options végétariennes/végétaliennes ?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolument. Notre traiteur propose des alternatives pour tous les régimes alimentaires. Merci de nous préciser vos restrictions lors de votre RSVP.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Où puis-je me loger ?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Nous avons négocié des tarifs préférentiels dans plusieurs hôtels à Paris et Versailles. Consultez la section "Lieux et accès" pour plus d'informations ou contactez-nous directement.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Comment faire un cadeau en argent ?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Vous trouverez une urne dédiée aux enveloppes le jour du mariage. Vous pouvez également contribuer en ligne via notre liste de mariage.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Quelle est la date limite pour confirmer ma présence ?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Nous vous prions de confirmer votre présence avant le <strong>24 Avril 2026</strong> afin que nous puissions organiser au mieux cette journée.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                    <p>© 2026 Le Jour J - Site d'invitation de mariage</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
